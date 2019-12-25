@@ -33,7 +33,7 @@ func main() {
 	c := session.DB("local").C("cache")
 
     //Считываем конфигурационный файл
-    file, err := os.Open("goserver/config.yml")
+    file, err := os.Open("config.yml")
     if err != nil { log.Fatal(err) }
     defer file.Close()
 
